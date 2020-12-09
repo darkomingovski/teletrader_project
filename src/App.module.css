@@ -1,0 +1,106 @@
+.Navbar {
+  display: flex;
+  background-color: #070a1b;
+  flex-direction: row;
+  line-height: 3em;
+  height: 3em;
+  border-bottom: 2px solid #292c3a;
+  justify-content: flex-end;
+  padding: 0 3em;
+}
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  margin: 3em auto 0 auto;
+  background-color: #0f1224;
+  border-radius: 10px;
+  width: max-content;
+}
+
+.CurrencyBoard,
+.CurrencyWrapper {
+  display: grid;
+  grid-template-areas: "hash symbol daily volume price";
+}
+
+.CurrencyBoard {
+  background-color: #070a1b;
+  border-radius: 10px;
+}
+
+.CurrencyWrapper:hover {
+  background-color: #070a1b;
+  border-radius: 5px;
+}
+
+.CurrencyBoard {
+  font-weight: bold;
+}
+
+.CurrencyContainer,
+.CurrencyBoard {
+  width: 70vw;
+  text-align: center;
+}
+
+.Hash {
+  width: 5em;
+  height: 3em;
+  line-height: 3em;
+}
+
+.Symbol,
+.Daily,
+.Volume,
+.Price {
+  width: 10em;
+  height: 3em;
+  line-height: 3em;
+  white-space: nowrap;
+}
+
+.Button {
+  cursor: pointer;
+  padding: 0 2em;
+}
+
+.Button:hover {
+  background-color: #141729;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1023px) {
+  .Navbar {
+    padding: 0 1em;
+  }
+
+  .CurrencyContainer,
+  .CurrencyBoard {
+    width: 100vw;
+  }
+
+  .CurrencyBoard {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .CurrencyWrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .Symbol,
+  .Daily,
+  .Volume,
+  .Price {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .Hash {
+    display: none;
+  }
+}

@@ -1,0 +1,38 @@
+.Profile {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 3em;
+  align-items: center;
+}
+
+.ProfileImage > img {
+  border-radius: 10px;
+  margin-bottom: 0.5em;
+}
+
+.ProfileData,
+.ProfileName {
+  width: max-content;
+  padding: 0.15em 0;
+}
+
+.ProfileName {
+  font-size: 1.25em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.Button {
+  cursor: pointer;
+  padding: 1em 2em;
+  margin: 1.25em 0;
+  width: max-content;
+  background-color: #070a1b;
+  border-radius: 10px;
+}
+
+.Button:hover {
+  background-color: #292c3a;
+  border-radius: 10px;
+}
